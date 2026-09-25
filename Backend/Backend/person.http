@@ -1,0 +1,29 @@
+@base_addes = http://localhost:3000/api/people
+
+POST {{base_addes}}
+Content-Type: application/json
+
+{
+    "firstName": "Cyber",
+    "lastName": "Shqt"
+}
+
+###
+GET  {{base_addes}}
+
+###
+GET  {{base_addes}}/10
+
+###
+PUT {{base_addes}}/3
+Content-Type: application/json
+
+{
+    "id" : 3,
+    "firstName": "Antx",
+    "lastName": "Manaw"
+}
+
+###
+DELETE {{base_addes}}/5
+
